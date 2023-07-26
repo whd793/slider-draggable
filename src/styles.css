@@ -1,0 +1,31 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  border: 1px solid black;
+  width: 600px;
+  overflow: hidden;
+  height: 500px;
+  /* pointer-events: none; */
+}
+
+.cards {
+  position: absolute;
+  height: 300px;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 300px);
+  pointer-events: none;
+}
+
+.card {
+  border: 3px solid gray;
+  overflow: hidden;
+}
